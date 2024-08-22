@@ -18,8 +18,8 @@
 
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
             android:id="@+id/l2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -38,12 +38,12 @@
 
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/centerCodeTextView"
                     style="@style/TextAppearance.Material3.BodyLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="16dp"
-                    android:id="@+id/centerCodeTextView"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:text="Center Code : " />
@@ -127,18 +127,18 @@
                     android:textAlignment="center" />
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/presentCandidatetextView"
                     style="@style/TextAppearance.Material3.TitleMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/presentCandidatetextView"
                     android:layout_weight="1"
                     android:text="0"
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/showPresent"
                     style="@style/TextAppearance.Material3.TitleMedium"
                     android:layout_width="wrap_content"
-                    android:id="@+id/show1"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="@color/orange"
@@ -164,27 +164,68 @@
                     android:textAlignment="center" />
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/absentCandidate"
                     style="@style/TextAppearance.Material3.TitleMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:id="@+id/absentCandidate"
                     android:text="0"
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/show2"
                     style="@style/TextAppearance.Material3.TitleMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="@color/orange"
                     android:text="Show"
-                    android:id="@+id/show2"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     app:chipStrokeWidth="0dp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/green"
+                android:padding="8dp"
+                android:weightSum="3">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/roll_no"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nameok"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/father_name"
+                    android:textColor="@color/white" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewCandidate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

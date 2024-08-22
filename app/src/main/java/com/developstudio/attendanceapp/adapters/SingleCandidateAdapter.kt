@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.developstudio.attendanceapp.R
 import com.developstudio.attendanceapp.data.CandidateDetails
+import com.google.android.material.textview.MaterialTextView
 
 class SingleCandidateAdapter(private val candidate: CandidateDetails) :
     RecyclerView.Adapter<SingleCandidateAdapter.CandidateViewHolder>() {
@@ -18,25 +19,30 @@ class SingleCandidateAdapter(private val candidate: CandidateDetails) :
     }
 
     override fun onBindViewHolder(holder: CandidateViewHolder, position: Int) {
-        // Since there is only one item, binding will be done to the single candidate
-        holder.nameTextView.text = candidate.name
-        holder.rollNumberTextView.text = "Roll Number: ${candidate.rollNumber}"
-        holder.dobTextView.text = "DOB: ${candidate.dob}"
-        holder.shiftTextView.text = "Shift: ${candidate.shift}"
-        holder.shiftDateTextView.text = "Shift Date: ${candidate.shiftDate}"
-        holder.examNameTextView.text = "Exam: ${candidate.examName}"
-        holder.isPresentTextView.text = "Present: ${if (candidate.isPresent) "Yes" else "No"}"
+        holder.bind(candidate)
     }
 
     override fun getItemCount(): Int = 1 // Only one item to display
 
     inner class CandidateViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val nameTextView: TextView = itemView.findViewById(R.id.nameTextView)
-        val rollNumberTextView: TextView = itemView.findViewById(R.id.rollNumberTextView)
-        val dobTextView: TextView = itemView.findViewById(R.id.dobTextView)
-        val shiftTextView: TextView = itemView.findViewById(R.id.shiftTextView)
-        val shiftDateTextView: TextView = itemView.findViewById(R.id.shiftDateTextView)
-        val examNameTextView: TextView = itemView.findViewById(R.id.examNameTextView)
-        val isPresentTextView: TextView = itemView.findViewById(R.id.isPresentTextView)
+        private val textName: MaterialTextView = itemView.findViewById(R.id.textName)
+        private val textFatherName: MaterialTextView = itemView.findViewById(R.id.textFatherName)
+        private val textRollNumber: MaterialTextView = itemView.findViewById(R.id.textRollNumber)
+        private val textDob: MaterialTextView = itemView.findViewById(R.id.textDob)
+        private val textShift: MaterialTextView = itemView.findViewById(R.id.textShift)
+        private val textShiftDate: MaterialTextView = itemView.findViewById(R.id.textShiftDate)
+        private val textExamName: MaterialTextView = itemView.findViewById(R.id.textExamName)
+        private val textIsPresent: MaterialTextView = itemView.findViewById(R.id.textIsPresent)
+
+        fun bind(candidate: CandidateDetails) {
+            textName.text = candidate.name
+            textFatherName.text = candidate.fatherName
+            textRollNumber.text = candidate.rollNumber
+            textDob.text = candidate.dob
+            textShift.text = candidate.shift
+            textShiftDate.text = candidate.shiftDate
+            textExamName.text = candidate.examName
+            textIsPresent.text = if (candidate.isPresent) "Yes" else "No"
+        }
     }
 }

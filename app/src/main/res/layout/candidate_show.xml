@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/demoRollNumber"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/roll_no" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/demoName"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:text="@string/nameok" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/demoFatherName"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:text="@string/father_name" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -25,4 +25,7 @@
     <string name="downloadCandidate">Download Candidates</string>
     <string name="uploadCsr">Upload CSR</string>
     <string name="logout">Logout</string>
+    <string name="father_name">Father Name</string>
+    <string name="nameok">Name</string>
+    <string name="roll_no">Roll No.</string>
 </resources>
