@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_nav">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainContentScreen">
 
+    <fragment
+        android:id="@+id/mainContentScreen"
+        android:name="com.developstudio.attendanceapp.ui.MainContentScreen"
+        android:label="NFL Headquater"
+        tools:layout="@layout/fragment_main_content_screen" >
+        <action
+            android:id="@+id/action_mainContentScreen_to_fetchCandidate"
+            app:destination="@id/fetchCandidate" />
+    </fragment>
+    <fragment
+        android:id="@+id/syncScreen"
+        android:name="com.developstudio.attendanceapp.ui.SyncScreen"
+        android:label="Sync"
+        tools:layout="@layout/fragment_sync_screen" />
+    <fragment
+        android:id="@+id/fetchCandidate"
+        android:name="com.developstudio.attendanceapp.ui.FetchCandidate"
+        android:label="Fetch"
+        tools:layout="@layout/fragment_fetch_candidate" />
+    <fragment
+        android:id="@+id/candidateDetailsScreen"
+        android:name="com.developstudio.attendanceapp.ui.CandidateDetailsScreen"
+        android:label="candidare Details"
+        tools:layout="@layout/fragment_candidate_details_screen" />
 </navigation>

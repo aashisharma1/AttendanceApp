@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/main_item"
+        android:title="@string/mainOptions">
+        <menu>
+            <item
+                android:id="@+id/mainContentScreen"
+                android:checkable="true"
+                android:icon="@drawable/baseline_home_24"
+                android:title="@string/home" />
+
+            <item
+                android:id="@+id/syncScreen"
+                android:checkable="true"
+                android:icon="@drawable/baseline_sync_24"
+                android:title="@string/sync" />
+
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/labels_item"
+        android:title="@string/settings">
+        <menu>
+
+
+            <item
+                android:id="@+id/candidateDetailsScreen"
+                android:icon="@drawable/details_24"
+                android:title="@string/details" />
+
+            <item
+                android:id="@+id/downloadCandidates"
+                android:icon="@drawable/download_24"
+                android:title="@string/downloadCandidate" />
+
+            <item
+                android:id="@+id/uploadCSR"
+                android:icon="@drawable/upload_24"
+                android:title="@string/uploadCsr" />
+
+            <item
+                android:id="@+id/logOut"
+                android:icon="@drawable/logout_24"
+                android:title="@string/logout" />
+
+        </menu>
+    </item>
+
+
+</menu>

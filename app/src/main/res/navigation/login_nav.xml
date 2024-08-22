@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/mainScreen2">
+
+    <fragment
+        android:id="@+id/addProfileDetails2"
+        android:name="com.developstudio.attendanceapp.ui.AddProfileDetails"
+        android:label="fragment_add_profile_details"
+        tools:layout="@layout/fragment_add_profile_details" >
+        <argument
+            android:name="myData"
+            app:argType="com.developstudio.attendanceapp.data.AttenderProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationScreen2"
+        android:name="com.developstudio.attendanceapp.ui.VerificationScreen"
+        android:label="fragment_verification_screen"
+        tools:layout="@layout/fragment_verification_screen" >
+        <action
+            android:id="@+id/action_verificationScreen2_to_addProfileDetails2"
+            app:destination="@id/addProfileDetails2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen2"
+        android:name="com.developstudio.attendanceapp.ui.MainScreen"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreen2_to_verificationScreen2"
+            app:destination="@id/verificationScreen2" />
+    </fragment>
+</navigation>

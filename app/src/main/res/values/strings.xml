@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">AttendanceApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enrollment">Enrollment</string>
+    <string name="verification">Verification</string>
+    <string name="version_1_7">Version 1.7</string>
+    <string name="password">Password</string>
+    <string name="center_code">Center Code</string>
+    <string name="chosse_shift">Chosse Shift</string>
+    <string name="chosse_exam">Chosse Exam</string>
+    <string name="absolute_idea">Absolute Idea</string>
+    <string name="think_different">Think Different</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="name">Enter your name</string>
+    <string name="phoneNumber">Enter Phone number</string>
+    <string name="rollNumber">Fetch with Roll number</string>
+    <string name="attendance_tracker">Attendance Tracker</string>
+    <string name="mainOptions">Main Options</string>
+    <string name="home">Home</string>
+    <string name="sync">Sync</string>
+    <string name="settings">Other Options</string>
+    <string name="details">Candidate Detials</string>
+    <string name="downloadCandidate">Download Candidates</string>
+    <string name="uploadCsr">Upload CSR</string>
+    <string name="logout">Logout</string>
 </resources>

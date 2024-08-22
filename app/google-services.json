@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1090872645719",
+    "firebase_url": "https://quotesjet.firebaseio.com",
+    "project_id": "quotesjet",
+    "storage_bucket": "quotesjet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090872645719:android:057453eab9276c4b592b12",
+        "android_client_info": {
+          "package_name": "com.developstudio.attendanceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090872645719-eeqqudeimlok127hg5e17b7ma93unrlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANItXNeYy-ut_N00zWWDa6z7b1NiB8DQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090872645719-eeqqudeimlok127hg5e17b7ma93unrlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090872645719:android:d50ffd80a7bc1577592b12",
+        "android_client_info": {
+          "package_name": "com.newhindikhaniya.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090872645719-eeqqudeimlok127hg5e17b7ma93unrlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANItXNeYy-ut_N00zWWDa6z7b1NiB8DQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090872645719-eeqqudeimlok127hg5e17b7ma93unrlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090872645719:android:534dc764fceaa767592b12",
+        "android_client_info": {
+          "package_name": "com.newquotesjet.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090872645719-eeqqudeimlok127hg5e17b7ma93unrlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANItXNeYy-ut_N00zWWDa6z7b1NiB8DQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090872645719-eeqqudeimlok127hg5e17b7ma93unrlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
