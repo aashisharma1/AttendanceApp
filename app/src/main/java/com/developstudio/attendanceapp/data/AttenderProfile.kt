@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class AttenderProfile(
+
     val examName: String = "",
     val shiftTime: String = "",
     val centerCode: String = "",
@@ -14,5 +15,6 @@ data class AttenderProfile(
     val phoneNumber: String = "",
     val documentUploaded: String = "",
     val attenderID: String="",
+
 ) : Parcelable
 

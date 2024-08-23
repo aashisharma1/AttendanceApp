@@ -14,6 +14,9 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
+            app:subtitle="Center Code : 5345 /n Center name"
+            app:subtitleCentered="true"
+            app:titleCentered="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:titleTextColor="@color/white"

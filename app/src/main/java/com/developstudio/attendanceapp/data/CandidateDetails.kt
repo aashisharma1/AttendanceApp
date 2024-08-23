@@ -8,5 +8,11 @@ data class CandidateDetails(
     val shift: String = "",
     val shiftDate: String = "",
     val examName: String = "",
-    val isPresent: Boolean = false
+    val isPresent: Boolean = false,
+    val verified: Boolean = false,
+    val verificationTrackerAttempt: Int = 1,
+    val info: attenderWork? = null
 )
+
+data class attenderWork(val attenderId: String, val isVerifiedByHim: Boolean=false)
+

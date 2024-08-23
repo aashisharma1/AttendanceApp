@@ -82,6 +82,7 @@ class AddProfileDetails : Fragment() {
             validateAndSubmit()
         }
     }
+
     private fun dispatchTakePictureIntent(code: Int) {
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         try {

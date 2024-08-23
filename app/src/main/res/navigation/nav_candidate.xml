@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_candidate"
+    app:startDestination="@id/candidateProfileFetch">
+
+    <fragment
+        android:id="@+id/candidateProfileFetch"
+        android:name="com.developstudio.attendanceapp.CandidateProfileFetch"
+        android:label="fragment_candidate_profile_fetch"
+        tools:layout="@layout/fragment_candidate_profile_fetch" >
+        <action
+            android:id="@+id/action_candidateProfileFetch_to_candidateFaceVerificationScreen"
+            app:destination="@id/candidateFaceVerificationScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/candidateFaceVerificationScreen"
+        android:name="com.developstudio.attendanceapp.CandidateFaceVerificationScreen"
+        android:label="fragment_candidate_face_verification_screen"
+        tools:layout="@layout/fragment_candidate_face_verification_screen" >
+        <action
+            android:id="@+id/action_candidateFaceVerificationScreen_to_candidateBiometricScreen"
+            app:destination="@id/candidateBiometricScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/candidateBiometricScreen"
+        android:name="com.developstudio.attendanceapp.CandidateBiometricScreen"
+        android:label="fragment_candidate_biometric_screen"
+        tools:layout="@layout/fragment_candidate_biometric_screen" >
+        <action
+            android:id="@+id/action_candidateBiometricScreen_to_verifiedScreen"
+            app:destination="@id/verifiedScreen" />
+        <action
+            android:id="@+id/action_candidateBiometricScreen_to_verifiedNotDone"
+            app:destination="@id/verifiedNotDone" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifiedScreen"
+        android:name="com.developstudio.attendanceapp.VerifiedScreen"
+        android:label="fragment_verified_screen"
+        tools:layout="@layout/fragment_verified_screen" />
+    <fragment
+        android:id="@+id/verifiedNotDone"
+        android:name="com.developstudio.attendanceapp.VerifiedNotDone"
+        android:label="fragment_verified_not_done"
+        tools:layout="@layout/fragment_verified_not_done" />
+</navigation>

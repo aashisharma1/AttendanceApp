@@ -15,7 +15,6 @@ import com.developstudio.attendanceapp.viewmodels.UserViewModel
 class FetchCandidate : Fragment() {
     private val viewmodel: UserViewModel by viewModels()
     private lateinit var binding: FragmentFetchCandidateBinding
-    private lateinit var singleCandidateAdapter: SingleCandidateAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,25 +30,7 @@ class FetchCandidate : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.recycleView.layoutManager = LinearLayoutManager(requireContext())
-        binding.nextButton.setOnClickListener {
 
-            if (binding.rollNumberEditTExt.text.toString().isNotEmpty()) {
-                viewmodel.fetchCandidateByRollNumber(binding.rollNumberEditTExt.text.toString())
-            }
-
-
-        }
-        
-
-        viewmodel.candidateLiveData.observe(viewLifecycleOwner){
-            if (it!=null){
-                singleCandidateAdapter = SingleCandidateAdapter(it)
-                binding.recycleView.adapter = singleCandidateAdapter
-            }else{
-                Toast.makeText(requireContext(), "No data Found", Toast.LENGTH_SHORT).show()
-            }
-        }
        
        
     }
